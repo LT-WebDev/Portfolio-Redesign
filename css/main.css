@@ -1,0 +1,830 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  font-family: freight-display-pro;
+  width: 100%;
+}
+
+.navbar-light .navbar-brand{
+  color: #F0FFF0;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #F0FFF0;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #926b38;
+}
+
+.navbar-toggler {
+  background-color: rgba(217,196,169,.25);
+}
+
+
+.header-background-img{
+  height: 100vh;
+  background-image: url("../img/christopher-gower-m_HRfLhgABo-unsplash@2x.png");
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* HEADER TEXT */
+.container-fluid .welcome {
+  margin-top: 5rem;
+  color: honeydew;
+}
+
+.hero-text {
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.507);
+}
+
+
+/*HEADER BUTTONS */
+.row .col .btn{
+  margin-left: 1rem;
+  margin-bottom: 1em;
+}
+
+.header-second-btn {
+  margin-left: .2rem;
+}
+
+/* TAILORED SERVICES CARDS SECTION */
+
+.card {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* WHO I AM SECTION */
+
+.background-color {
+  background-color: #303030;
+  color: honeydew;
+}
+
+.background-highlight {
+  background-color: #CEB99D;
+}
+
+/* CALL TO ACTION SECTION */
+
+.background-img {
+  background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplashUpdate2.jpg");
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:honeydew;
+}
+
+/* FOOTER SECTION */
+
+.container-fluid .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container-fluid .navbar-nav .nav-link {
+  color: honeydew;
+}
+
+.navbar-nav .nav-item:hover {
+  color: #d5d5d5 ;
+}
+
+
+.social a {
+  font-size: 1.2em;
+  padding: .5em;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-instagram {
+  color: #E1306C;
+}
+
+.fa-linkedin {
+  color: #2867b2;
+}
+
+.fa-twitter:hover ,
+.fa-instagram:hover,
+.fa-linkedin:hover {
+  color: #d5d5d5;
+}
+
+
+/* START OF THE PORTFOLIO PAGE SECTION
+ *
+ *
+ * 
+ */
+
+ .portfolio-background-img{
+  height: 100vh;
+  background-image: url("../img/laptop-1478822_1920.jpg");
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-background-color { 
+  background-color:#E1E1E1 ;
+}
+
+.portfolio-hero-text .welcome {
+  text-align: left;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.507);
+}
+
+/* START OF ABOUT PAGE SECTION
+ *
+ *
+ * 
+ */
+
+ .about-background-img{
+  height: 100vh;
+  background-image: url("../img/hello_iphone-responsive.jpg");
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center; 
+}
+
+
+
+
+
+
+
+/* START OF THE RESUME PAGE SECTION
+ *
+ *
+ * 
+ */
+
+ .resume-background-img{
+  height: 100vh;
+  background-image: url("../img/iphone-notebook-pen-working-34578.jpg");
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.resume-background-color{
+  background-color: #F3EFE0;
+  width: 95%;
+}
+
+/*
+ * CV section formatting
+ */
+ .col-md-6 .lead {
+   padding-top: 1.2rem;
+   padding-bottom: 1.2rem;
+ } 
+
+ .row .col-md-6 .date-period {
+   margin-top: -.6rem;
+   padding-top: 0rem;
+   font-size: .95rem;
+   font-style: italic;
+   
+ }
+
+
+
+
+/*
+ * Skills section formatting
+ */
+  .col-md-6 p{
+    margin-top: 1.2rem;
+    margin-bottom: 0rem;
+  }
+  .progress {
+    margin-left: .7rem;
+  }
+
+
+/* START OF CONTACTS PAGE SECTION
+ *
+ *
+ * 
+ */
+
+ .contact-background-img{
+  height: 100vh;
+  background-image: url("../img/contactTwo.jpg");
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center; 
+}
+
+.subtitle {
+  margin-top: -.8rem;
+  padding-top: 0rem;
+  font-size: .95rem;
+  font-style: italic;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  width: 95%;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media(min-width: 1920px){
+
+/* START OF HOME PAGE SECTION
+*
+*
+* 
+*/
+      .container-fluid .welcome {
+        margin-top: 5rem;
+        margin-left: 5rem;
+        color: honeydew;
+      }
+      .container-fluid .welcome .col .display-4{
+        font-size: 5.5rem;
+      }
+      .row .col .btn{
+        margin-left: 6.5rem;
+      }
+    
+      .col .btn {
+        font-size: 1.5em;
+        padding: .55em;
+      }
+    
+      .header-second-btn {
+        margin-left: 20rem;
+        margin-top: -5.5rem;    
+      }
+    
+    
+      /* START OF NAVBAR SECTION
+     *
+     *
+     * 
+     */
+      .navbar-nav {
+        font-size: 1.55rem;
+      }
+      .navbar-brand {
+        font-size: 1.55rem;
+        margin-left: 6.5rem;
+      }
+
+      /* START OF WHO I AM SECTION
+     *
+     *
+     * 
+     */
+
+     .custom-mt {
+       margin-top: 10rem !important;
+     }
+
+    /* START OF CARDS SECTION
+     *
+     *
+     * 
+     */
+
+     .hide-desktop {
+       display: none;
+     }
+
+     .card {
+       width: 95% !important;
+     }
+
+/* CALL TO ACTION SECTION */
+
+  .background-img {
+  height: 90vh;
+  background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplashUpdate2.jpg");
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:honeydew;
+}
+
+.background-img .container{
+  padding-top: 15rem ;
+}
+
+/* START OF ABOUT PAGE
+*
+*
+* 
+*/
+
+.row .col .btn-outline-dark {
+  margin-left: .5rem !important;
+}
+    
+}
+
+
+/* START 1366 RESOLUTION SECTION
+*
+*
+* 
+*/
+
+@media (min-width: 1366px){
+  /* START OF HOME PAGE SECTION
+*
+*
+* 
+*/
+.container-fluid .welcome {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  color: honeydew;
+}
+.container-fluid .welcome .col .display-4{
+  font-size: 3.5rem;
+}
+.row .col .btn{
+  margin-left: 6.5rem;
+}
+
+.col .btn {
+  font-size: 1.15em;
+  padding: .55em;
+}
+
+.header-second-btn {
+  margin-left: 18rem;
+  margin-top: -4.3rem;    
+}
+
+
+/* START OF NAVBAR SECTION
+*
+*
+* 
+*/
+.navbar-nav {
+  font-size: 1.25rem;
+}
+.navbar-brand {
+  font-size: 1.55rem;
+  margin-left: 6.5rem;
+}
+
+/* START OF WHO I AM SECTION
+*
+*
+* 
+*/
+
+.custom-mt {
+ margin-top: 10rem !important;
+}
+
+/* START OF CARDS SECTION
+*
+*
+* 
+*/
+
+.hide-desktop {
+ display: none;
+}
+
+.card {
+ width: 95% !important;
+}
+
+/* CALL TO ACTION SECTION */
+
+.background-img {
+height: 90vh;
+background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplashUpdate2.jpg");
+background-color: black;
+background-size: cover;
+background-repeat: no-repeat;
+color:honeydew;
+}
+
+.background-img .container{
+padding-top: 10rem ;
+}
+
+/* START OF ABOUT PAGE
+*
+*
+* 
+*/
+.row .col .btn-outline-dark {
+margin-left: .5rem !important;
+}
+}
+
+/* START OF 667 LANDSCAPE PAGE
+*
+*
+* 
+*/
+
+@media (min-width: 667px){
+/* START OF NAVBAR SECTION
+*
+*
+* 
+*/
+.navbar-nav {
+  font-size: .95rem;
+}
+
+.navbar-brand {
+  font-size: 1.55rem;
+  margin-left: 2.90rem;
+}
+
+
+  /* START OF HOME PAGE SECTION
+*
+*
+* 
+*/
+.container-fluid .welcome {
+  margin-top: 0rem;
+  margin-left: 2rem;
+  color: honeydew;
+}
+.container-fluid .welcome .col .display-4{
+  font-size: 2.5rem;
+}
+.row .col .btn{
+  margin-left: 4.2rem;
+}
+
+.col .btn {
+  font-size: 1.05em;
+  padding: .55em;
+}
+
+.header-second-btn {
+  margin-left: 14rem;
+  margin-top: -4em;    
+}
+
+.row .col .btn-outline-dark {
+  margin-left: .5rem !important;
+}
+
+}
+
+@media(min-width: 812px) {
+  .card {
+    width: 90% !important;
+   }
+}
+
+@media (min-width: 768px){
+  /* START OF NAVBAR SECTION
+  *
+  *
+  * 
+  */
+  body {
+    font-size: 1.25rem;
+  }
+  .navbar-nav {
+    font-size: 2rem;
+  }
+  
+  .navbar-brand {
+    font-size: 2.55rem;
+    margin-left: 2.90rem;
+  }
+  
+  
+    /* START OF HOME PAGE SECTION
+  *
+  *
+  * 
+  */
+  .container-fluid .welcome {
+    margin-top: 1.25rem;
+    margin-left: 2rem;
+    color: honeydew;
+  }
+  .container-fluid .welcome .col .display-4{
+    font-size: 5.5rem;
+  }
+  .row .col .btn{
+    margin-left: 4.2rem;
+  }
+  
+  .col .btn {
+    font-size: 1.55em;
+    padding: .55em;
+  }
+  
+  .header-second-btn {
+    margin-left: 3.75rem;
+    margin-top: 1.2em;    
+  }
+  
+  .row .col .btn-outline-dark {
+    margin-left: .5rem !important;
+  }
+  
+  .card {
+    width: 95% !important;
+   }
+
+
+  }
+
+  @media(min-width: 1024px){
+    .header-second-btn {
+      margin-left: 22rem;
+      margin-top: -7.3rem;    
+    }
+
+    .row .col .btn-outline-dark {
+      font-size: 1.25rem !important;
+    }
+    
+  }
+
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
