@@ -28,12 +28,19 @@ body {
   width: 100%;
 }
 
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
 .navbar-light .navbar-brand{
   color: #F0FFF0;
+  margin-left: 1.25rem;
 }
 
 .navbar-light .navbar-nav .nav-link{
   color: #F0FFF0;
+  margin-left: 1rem;
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -259,6 +266,10 @@ body {
   font-style: italic;
 }
 
+.submit-btn {
+	margin-left: -28px !important; 
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -428,11 +439,12 @@ textarea {
 */
       .container-fluid .welcome {
         margin-top: 5rem;
-        margin-left: 5rem;
+        margin-left: 5.5rem;
         color: honeydew;
       }
       .container-fluid .welcome .col .display-4{
         font-size: 5.5rem;
+		margin-left: 1.65rem;
       }
       .row .col .btn{
         margin-left: 6.5rem;
@@ -459,7 +471,7 @@ textarea {
       }
       .navbar-brand {
         font-size: 1.55rem;
-        margin-left: 6.5rem;
+        margin-left: 5.25rem !important;
       }
 	  
 	  footer .navbar-nav {
@@ -657,14 +669,14 @@ margin-left: .5rem !important;
 */
 .container-fluid .welcome {
   margin-top: 0rem;
-  margin-left: 2rem;
+  margin-left: 0.25rem;
   color: honeydew;
 }
 .container-fluid .welcome .col .display-4{
   font-size: 2.5rem;
 }
 .row .col .btn{
-  margin-left: 4.2rem;
+  margin-left: 1.2rem;
 }
 
 .col .btn {
@@ -677,9 +689,13 @@ margin-left: .5rem !important;
   margin-top: -4em;    
 }
 
+/* .btn-outline-secondary {
+	margin-left: .25rem !important;
+}
+
 .row .col .btn-outline-dark {
   margin-left: .5rem !important;
-}
+} */
 
 }
 
@@ -687,6 +703,35 @@ margin-left: .5rem !important;
   .card {
     width: 90% !important;
    }
+ /*   body {
+    font-size: 1.15rem !important;
+  }
+  .navbar-nav {
+    font-size: 1rem !important;
+  }
+  
+  .navbar-brand {
+    font-size: 1.55rem !important;
+    margin-left: 2.90rem !important;
+  }
+  
+  .container-fluid .welcome .col .display-4{
+    font-size: 2.25rem !important;
+  }
+  
+  .col .btn {
+    font-size: .95em !important;
+    padding: .55em !important;
+  }
+  .row .col .btn {
+	  margin-left: 2.5rem !important;
+  }
+  
+  .navbar-light .navbar-nav .nav-link{
+  color: #F0FFF0;
+  margin-left: 2.5rem !important;
+} */
+   
 }
 
 @media (min-width: 768px){
