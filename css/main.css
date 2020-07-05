@@ -461,6 +461,10 @@ textarea {
         font-size: 1.55rem;
         margin-left: 6.5rem;
       }
+	  
+	  footer .navbar-nav {
+		  font-size: 1.25rem;
+	  }
 
       /* START OF WHO I AM SECTION
      *
@@ -499,6 +503,10 @@ textarea {
 
 .background-img .container{
   padding-top: 15rem ;
+}
+
+.custom-margin {
+	margin-right: 2.5rem;
 }
 
 /* START OF ABOUT PAGE
@@ -562,6 +570,10 @@ textarea {
   margin-left: 6.5rem;
 }
 
+	  footer .navbar-nav {
+		  font-size: 1.25rem;
+	  }
+
 /* START OF WHO I AM SECTION
 *
 *
@@ -600,6 +612,11 @@ color:honeydew;
 .background-img .container{
 padding-top: 10rem ;
 }
+
+.custom-margin {
+	margin-right: 1.12rem;
+}
+
 
 /* START OF ABOUT PAGE
 *
